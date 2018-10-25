@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+    <children>
+        <HBox prefHeight="67.0" prefWidth="900.0">
+            <children>
+                <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#actionButtonPressed" text="Добавить">
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                    </HBox.margin>
+                </Button>
+                <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#actionButtonPressed" text="Удалить">
+                    <HBox.margin>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <TableView fx:id="tableDrivers" prefHeight="523.0" prefWidth="880.0" stylesheets="@/test.css">
+            <columns>
+            <TableColumn fx:id="columnCarNumber" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" resizable="false" text="Номер машины" />
+                <TableColumn fx:id="columnFIO" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" resizable="false" text="ФИО" />
+                <TableColumn fx:id="columnData" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" resizable="false" text="Дата" />
+                <TableColumn fx:id="columnStatus" maxWidth="259.0" minWidth="259.0" prefWidth="259.0" resizable="false" text="Статус" />
+            </columns>
+            <VBox.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" />
+            </VBox.margin>
+        </TableView>
+    </children>
+   <rotationAxis>
+      <Point3D />
+   </rotationAxis>
+</VBox>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StatusHistoryController">
+    <children>
+        <TableView fx:id="tableStatusHistory" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" stylesheets="@test.css">
+            <columns>
+                <TableColumn fx:id="columnData" maxWidth="300.0" minWidth="200.0" prefWidth="250.0" resizable="false" text="Дата" />
+                <TableColumn fx:id="columnStatus" maxWidth="300.0" minWidth="200.0" prefWidth="250.0" resizable="false" text="Статус" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>
