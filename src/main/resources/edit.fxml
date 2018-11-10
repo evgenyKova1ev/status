@@ -7,20 +7,20 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditDialogController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="251.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EditDialogController">
     <children>
-        <VBox prefHeight="251.0" prefWidth="470.0">
+        <VBox prefHeight="251.0" prefWidth="500.0">
             <children>
                 <HBox prefHeight="190.0" prefWidth="470.0">
                     <children>
-                        <VBox prefHeight="153.0" prefWidth="328.0">
+                        <VBox prefHeight="153.0" prefWidth="358.0">
                             <children>
                                 <HBox prefHeight="53.0" prefWidth="221.0">
                                     <children>
-                                        <Label prefHeight="27.0" prefWidth="59.0" text="Фамилия" />
+                                        <Label prefHeight="27.0" text="Фамилия" />
                                         <TextField fx:id="txtSurname">
                                             <HBox.margin>
-                                                <Insets left="10.0" />
+                                                <Insets left="20.0" />
                                             </HBox.margin>
                                         </TextField>
                                     </children>
@@ -30,10 +30,10 @@
                                 </HBox>
                                 <HBox prefHeight="51.0" prefWidth="263.0">
                                     <children>
-                                        <Label prefHeight="28.0" prefWidth="27.0" text="Имя" />
+                                        <Label prefHeight="28.0" text="Имя" />
                                         <TextField fx:id="txtName">
                                             <HBox.margin>
-                                                <Insets left="42.0" />
+                                                <Insets left="54.0" />
                                             </HBox.margin>
                                         </TextField>
                                     </children>
@@ -43,10 +43,10 @@
                                 </HBox>
                                 <HBox prefHeight="0.0" prefWidth="277.0">
                                     <children>
-                                        <Label prefHeight="27.0" prefWidth="61.0" text="Отчество" />
+                                        <Label prefHeight="27.0" text="Отчество" />
                                         <TextField fx:id="txtPatronymic">
                                             <HBox.margin>
-                                                <Insets left="8.0" />
+                                                <Insets left="18.0" />
                                             </HBox.margin>
                                         </TextField>
                                     </children>
@@ -59,7 +59,7 @@
                               <Label prefHeight="27.0" text="Машина" />
                               <TextField fx:id="txtCarNumber">
                                  <HBox.margin>
-                                    <Insets left="17.0" />
+                                    <Insets left="26.0" />
                                  </HBox.margin>
                               </TextField>
                            </children>
@@ -72,11 +72,11 @@
                                 <Insets left="10.0" />
                             </padding>
                         </VBox>
-                        <VBox prefHeight="140.0" prefWidth="222.0">
+                        <VBox prefHeight="196.0" prefWidth="236.0">
                             <children>
                                 <Button fx:id="btnOk" mnemonicParsing="false" onAction="#actionOk" prefHeight="30.0" prefWidth="110.0" text="Подтвердить">
                                     <VBox.margin>
-                                        <Insets bottom="10.0" left="15.0" right="10.0" top="20.0" />
+                                        <Insets bottom="10.0" left="15.0" right="10.0" top="17.0" />
                                     </VBox.margin>
                                 </Button>
                                 <Button fx:id="btnCancel" cancelButton="true" mnemonicParsing="false" onAction="#actionClose" prefHeight="30.0" prefWidth="110.0" text="Отмена">
